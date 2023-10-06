@@ -10,8 +10,8 @@ function Hero() {
         <img
           src="/src/assets/dog.jpg"
           alt="My image"
-          className="rounded-[54%46%67%33%/54%40%60%46%]"
           width="300"
+          className="animate-morph "
         />
       </div>
     </section>
