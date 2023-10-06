@@ -5,7 +5,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 
 function Header() {
-  const navLinks = ["Home", "New", "Popular", "Trending", "Categories"];
+  const navLinks = ["Home", "Projects", "Service", "Contact"];
 
   const [openDrawer, setOpenDrawer] = useState(false);
 
@@ -24,6 +24,8 @@ function Header() {
           checked={openDrawer}
           onChange={() => setOpenDrawer(!openDrawer)}
         />
+
+        {/* Hamburger */}
         <nav className="flex justify-end">
           <div className="lg:hidden">
             <label htmlFor="my-drawer-3" className="btn btn-square btn-ghost">
@@ -31,6 +33,7 @@ function Header() {
             </label>
           </div>
 
+          {/* Desktop links */}
           <div className="hidden lg:block">
             <div className="menu menu-horizontal flex gap-6">
               {navLinks.map((link) => (
@@ -40,9 +43,10 @@ function Header() {
           </div>
         </nav>
 
-        <div className="drawer-side">
+        {/* Mobile  */}
+        <div className="drawer-side z-10">
           <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
-          <div className="menu p-4 w-80 h-full text-left bg-off-white text-black relative bg-green-300">
+          <div className="menu p-4 w-80 h-full text-left bg-off-white text-black relative bg-green-800">
             {/* Close drawer btn */}
             <img
               src={menuClose}

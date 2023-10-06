@@ -3,12 +3,12 @@ function Projects() {
     <section className="flex flex-col">
       <h2 className="text-4xl">Projects</h2>
 
-      <div className="group card w-96 md:max-h-64 md:w-full bg-green-500 self-center border flex md:flex-row md:relative ">
+      <div className="card w-96 md:max-h-64 md:w-full bg-green-500 flex flex-col self-center md:flex-row group md:relative z-0">
         <figure className="md:flex-1">
           <img
             src="/src/assets/dog.jpg"
             alt="Shoes"
-            className="group-hover:opacity-40"
+            className="group-hover:opacity-40 h-full w-full object-cover"
           />
         </figure>
         <div className="card-body md:flex-1 group-hover:opacity-5">
@@ -16,6 +16,7 @@ function Projects() {
           <p>If a dog chews shoes whose shoes does he choose?</p>
           <p>Tech used: Flutter, Firebase</p>
         </div>
+
         <button className="bg-green-50 rounded py-2 w-48 md:absolute md:top-[50%] md:left-[50%] md:-translate-x-1/2 md:-translate-y-1/2 md:hidden group-hover:block self-center mb-4">
           View
         </button>
