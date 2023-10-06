@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
 
 function Contact() {
   const formRef = useRef();
@@ -7,23 +8,61 @@ function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    console.log("Going to send");
-
-    emailjs
-      .sendForm(
-        "service_uos4bvn",
-        "template_kmdvvig",
-        formRef.current,
-        "YFxIfVifT9jgXJVFd"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
+    if (
+      !formRef.current[0].value ||
+      !formRef.current[1].value ||
+      !formRef.current[2].value
+    ) {
+      Swal.fire("Please enter all fields.").then((val) => {
+        if (!formRef.current[0].value) {
+          formRef.current[0].classList.add("border-red-500", "border-[1px]");
         }
-      );
+        if (!formRef.current[1].value) {
+          formRef.current[1].classList.add("border-red-500", "border-[1px]");
+        }
+        if (!formRef.current[2].value) {
+          formRef.current[2].classList.add("border-red-500", "border-[1px]");
+        }
+      });
+    } else {
+      emailjs
+        .sendForm(
+          "service_uos4bvn",
+          "template_kmdvvig",
+          formRef.current,
+          "YFxIfVifT9jgXJVFd"
+        )
+        .then(
+          (result) => {
+            Swal.fire({
+              position: "top-end",
+              icon: "success",
+              title: "Message sent successfully",
+              showConfirmButton: false,
+              timer: 1000,
+            });
+          },
+          (error) => {
+            Swal.fire({
+              position: "top-end",
+              icon: "error",
+              title: "Error sending message",
+              showConfirmButton: false,
+              timer: 1000,
+            });
+          }
+        );
+    }
+  };
+
+  const removeError = (e) => {
+    e.target.classList.remove("border-red-500", "border-[1px]");
+  };
+
+  const submit = (e) => {
+    e.preventDefault();
+    console.log(`Going to send `);
+    console.log(formRef.current[0].value);
   };
 
   return (
@@ -42,13 +81,15 @@ function Contact() {
             type="text"
             name="user_name"
             id="price"
-            className="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+            onFocus={removeError}
+            className="block w-full  rounded-md py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 transition duration-300"
             placeholder="Full Name *"
           />
           <input
             type="email"
             name="user_email"
             placeholder="Email *"
+            onFocus={removeError}
             className="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
           />
           <textarea
@@ -57,6 +98,7 @@ function Contact() {
             cols="30"
             rows="3"
             placeholder="Description *"
+            onFocus={removeError}
             className="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
           ></textarea>
           <input
