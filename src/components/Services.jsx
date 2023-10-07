@@ -1,6 +1,6 @@
 function Services() {
   return (
-    <section className="px-8">
+    <section className="max-w-4xl mx-auto">
       <h2 className="text-4xl">What can I do?</h2>
       <div className="flex gap-2 md:gap-16 justify-center">
         <div className="website max-w-md">
