@@ -1,4 +1,4 @@
-function Skills() {
+function Services() {
   return (
     <section className="px-8">
       <h2 className="text-4xl">What can I do?</h2>
@@ -24,4 +24,4 @@ function Skills() {
   );
 }
 
-export default Skills;
+export default Services;
