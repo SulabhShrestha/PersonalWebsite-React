@@ -10,10 +10,10 @@ function Projects() {
           <img
             src="/src/assets/dog.jpg"
             alt="Shoes"
-            className="md:flex group-hover:opacity-40 object-cover p-4 h-full w-full rounded-3xl"
+            className="md:flex md:group-hover:opacity-40 object-cover p-4 h-full w-full rounded-3xl"
           />
         </figure>
-        <div className="card-body md:flex-1 group-hover:opacity-5">
+        <div className="card-body md:flex-1 md:group-hover:opacity-5">
           <h2 className="card-title">Mood Tracker</h2>
           <p>If a dog chews shoes whose shoes does he choose?</p>
           <p>Tech used: Flutter, Firebase</p>
