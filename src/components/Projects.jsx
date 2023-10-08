@@ -1,11 +1,12 @@
 function Projects() {
   return (
-    <section className="flex flex-col max-w-4xl mx-auto">
+    <section className="flex flex-col max-w-4xl mx-auto ">
       <h2 className="text-4xl mx-auto md:mx-0 md:text-left border-b-2 w-min mb-4 mt-12">
         Projects
       </h2>
 
-      <div className="rounded-xl w-96 md:max-h-64 md:w-full bg-green-500 flex flex-col self-center md:flex-row group md:relative z-0">
+      {/* Card */}
+      <div className="rounded-xl md:max-h-64 md:w-full bg-green-500 flex flex-col self-center md:flex-row group md:relative z-0 mx-4">
         <figure className="md:flex-1 inline-block">
           <img
             src="/src/assets/dog.jpg"

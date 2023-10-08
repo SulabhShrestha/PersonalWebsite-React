@@ -60,7 +60,7 @@ function Contact() {
   };
 
   return (
-    <section className="flex gap-4 md:flex-row flex-col mx-auto mt-20 mb-8 md:mb-20 max-w-4xl">
+    <section className="flex gap-4 md:flex-row flex-col mx-4 md:mx-auto mt-20 mb-8 md:mb-20 max-w-4xl ">
       <div className="declaration flex-1 text-center">
         <h2 className="text-4xl mb-4 border-b-2 w-max md:mx-0 md:text-left">
           Hire me
