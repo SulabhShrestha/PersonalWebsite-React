@@ -1,7 +1,9 @@
 function Services() {
   return (
     <section className="max-w-4xl mx-auto mt-20">
-      <h2 className="text-4xl mb-4 border-b-2 w-max mx-auto">What can I do?</h2>
+      <h2 className="text-4xl mb-4 border-b-2 w-max mx-auto md:mx-0 md:text-left">
+        What can I do?
+      </h2>
       <div className="flex flex-col items-center md:flex-row gap-2 md:gap-16 ">
         <div className="website max-w-md bg-green-500 rounded-xl px-6 py-4 ">
           <h3 className="card-title">Website</h3>

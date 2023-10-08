@@ -7,7 +7,7 @@ import Services from "./components/Services";
 
 function App() {
   return (
-    <div className="bg-white h-[100vh] ">
+    <div className="bg-white ">
       <Header />
       <main>
         <Hero />

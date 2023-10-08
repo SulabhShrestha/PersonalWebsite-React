@@ -59,24 +59,24 @@ function Contact() {
     e.target.classList.remove("border-red-500", "border-[1px]");
   };
 
-  const submit = (e) => {
-    e.preventDefault();
-    console.log(`Going to send `);
-    console.log(formRef.current[0].value);
-  };
-
   return (
-    <section className="flex gap-4 md:flex-row flex-col px-8">
-      <div className="declaration flex-1">
-        <h2>Hire me</h2>
-        <p>
+    <section className="flex gap-4 md:flex-row flex-col mx-auto mt-20 mb-8 md:mb-20 max-w-4xl">
+      <div className="declaration flex-1 text-center">
+        <h2 className="text-4xl mb-4 border-b-2 w-max md:mx-0 md:text-left">
+          Hire me
+        </h2>
+        <p className="md:text-left">
           If you have a project in mind, I'd love to hear about it. Feel free to
           contact me.
         </p>
       </div>
 
       <div className="contact flex-[2]">
-        <form ref={formRef} onSubmit={sendEmail}>
+        <form
+          ref={formRef}
+          onSubmit={sendEmail}
+          className="flex flex-col gap-2"
+        >
           <input
             type="text"
             name="user_name"
@@ -104,7 +104,7 @@ function Contact() {
           <input
             type="submit"
             value="Send"
-            className="bg-green-500 px-6 py-2 rounded-lg text-white font-bold hover:bg-green-600 transition duration-300 ease-in-out cursor-pointer"
+            className="bg-green-500 px-6 py-2 rounded-lg text-white font-bold hover:bg-green-600 transition duration-300 ease-in-out cursor-pointer flex-none w-min self-center"
           />
         </form>
       </div>

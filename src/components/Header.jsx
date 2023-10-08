@@ -46,7 +46,7 @@ function Header() {
         {/* Mobile  */}
         <div className="drawer-side z-10">
           <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
-          <div className="menu p-4 w-80 h-full text-left bg-off-white text-black relative bg-green-800">
+          <div className="menu p-4 w-80 h-full text-left text-black relative bg-green-800 z-40">
             {/* Close drawer btn */}
             <img
               src={menuClose}
