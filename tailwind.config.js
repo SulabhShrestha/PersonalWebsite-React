@@ -3,6 +3,12 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      colors: {
+        appLightBlue: "#a2ddf5",
+        appYellow: "#f6e29d",
+        appRed: "#f8a2a1",
+        appPurple: "#f3bdf9",
+      },
       animation: {
         morph: "morph 5s linear infinite alternate",
         wave: "wave 5s linear infinite",

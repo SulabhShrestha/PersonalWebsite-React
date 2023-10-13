@@ -60,9 +60,12 @@ function Contact() {
   };
 
   return (
-    <section className="flex gap-4 md:flex-row flex-col mx-4 md:mx-auto mt-20 mb-8 md:mb-20 max-w-4xl ">
+    <section
+      className="flex gap-4 md:flex-row flex-col mx-4 md:mx-auto mt-20 mb-8 md:mb-20 max-w-4xl bg-appPurple px-6 py-4 rounded-xl
+    "
+    >
       <div className="declaration flex-1 text-center">
-        <h2 className="text-4xl mb-4 border-b-2 w-max md:mx-0 md:text-left">
+        <h2 className="text-4xl mb-4 border-b-2 w-max md:mx-0 md:text-left border-b-black font-medium">
           Hire me
         </h2>
         <p className="md:text-left">
@@ -104,7 +107,7 @@ function Contact() {
           <input
             type="submit"
             value="Send"
-            className="bg-green-500 px-6 py-2 rounded-lg text-white font-bold hover:bg-green-600 transition duration-300 ease-in-out cursor-pointer flex-none w-min self-center"
+            className="bg-slate-950 hover:bg-slate-500 px-6 py-2 rounded-lg text-white font-bold  transition duration-300 ease-in-out cursor-pointer flex-none w-min self-center"
           />
         </form>
       </div>
