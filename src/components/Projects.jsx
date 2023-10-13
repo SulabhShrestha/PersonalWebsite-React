@@ -22,7 +22,7 @@ function Projects() {
           <p>If a dog chews shoes whose shoes does he choose?</p>
           <p>Tech used: Flutter, Firebase</p>
 
-          <div className="links flex gap-4">
+          <div className="links flex gap-4 justify-center md:justify-start">
             <button className="bg-green-50 rounded px-4 py-2 flex flex-row items-center gap-2 hover:bg-appLightBlue transition-colors duration-200">
               Code <FaGithub size={20} />{" "}
             </button>

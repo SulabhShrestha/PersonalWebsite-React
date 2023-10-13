@@ -15,7 +15,7 @@ function Header() {
 
   return (
     <header className="flex justify-between items-center py-4 px-8" id="Home">
-      <h1 className="flex-1">TheSulabh</h1>
+      <h1 className="flex-1 font-bold text-blue-500 text-xl">TheSulabh</h1>
       <div className="drawer drawer-end inline-block flex-1">
         <input
           id="my-drawer-3"
@@ -37,7 +37,7 @@ function Header() {
           <div className="hidden lg:block">
             <div className="menu menu-horizontal flex gap-6">
               {navLinks.map((link) => (
-                <span>{link}</span>
+                <span className="text-lg font-medium">{link}</span>
               ))}
             </div>
           </div>
@@ -46,7 +46,7 @@ function Header() {
         {/* Mobile  */}
         <div className="drawer-side z-10">
           <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
-          <div className="menu p-4 w-80 h-full text-left text-black relative bg-green-800 z-40">
+          <div className="menu p-4 w-72 h-full text-left text-black relative bg-gradient-to-br from-green-300 to-green-50 z-40">
             {/* Close drawer btn */}
             <img
               src={menuClose}
@@ -57,7 +57,10 @@ function Header() {
 
             {/* drawer links */}
             {navLinks.map((link) => (
-              <p className="pb-4" onClick={() => setOpenDrawer(false)}>
+              <p
+                className="pb-4 font-medium mb-2"
+                onClick={() => setOpenDrawer(false)}
+              >
                 {link}
               </p>
             ))}

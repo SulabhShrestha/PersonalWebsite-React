@@ -16,9 +16,9 @@ function Hero() {
           </div>
 
           <div className="social-links flex gap-4 justify-center md:justify-start">
-            <FaGithub className="bg-white text-4xl p-[4px] rounded-full cursor-pointer hover:scale-125 transition-all duration-300 text-blue-500" />
-            <FaLinkedin className="bg-white text-4xl p-[4px] rounded-full cursor-pointer hover:scale-125 transition-all duration-300" />
-            <FaFacebookF className="bg-white text-4xl p-[4px] rounded-full cursor-pointer hover:scale-125 transition-all duration-300" />
+            <FaGithub className="bg-white text-4xl p-[4px] cursor-pointer hover:scale-125 transition-all duration-300 hover:text-blue-500" />
+            <FaLinkedin className="bg-white text-4xl p-[4px] cursor-pointer hover:scale-125 transition-all duration-300 hover:text-blue-500" />
+            <FaFacebookF className="bg-white text-4xl p-[4px] cursor-pointer hover:scale-125 transition-all duration-300 hover:text-blue-500" />
           </div>
         </div>
 
