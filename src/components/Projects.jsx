@@ -12,7 +12,7 @@ function Projects() {
       <div className="rounded-xl md:max-h-64 md:w-full bg-appYellow flex flex-col self-center md:flex-row z-0 mx-4">
         <figure className="md:flex-1 inline-block">
           <img
-            src="/src/assets/dog.jpg"
+            src="/src/assets/mood-tracker.png"
             alt="Shoes"
             className="md:flex object-cover p-4 h-full w-full rounded-3xl "
           />
@@ -23,12 +23,24 @@ function Projects() {
           <p>Tech used: Flutter, Firebase</p>
 
           <div className="links flex gap-4 justify-center md:justify-start">
-            <button className="bg-green-50 rounded px-4 py-2 flex flex-row items-center gap-2 hover:bg-appLightBlue transition-colors duration-200">
-              Code <FaGithub size={20} />{" "}
+            <button className="bg-green-50 rounded px-4 py-2  hover:bg-appLightBlue transition-colors duration-200">
+              <a
+                href="https://github.com/SulabhShrestha/MoodTracker"
+                target="_blank"
+                className="flex flex-row items-center gap-2"
+              >
+                Code <FaGithub size={20} />
+              </a>
             </button>
 
-            <button className="bg-green-50 rounded px-4 py-2 flex flex-row items-center gap-2 hover:bg-appLightBlue transition-colors duration-200">
-              View <AiOutlineLink size={20} />{" "}
+            <button className="bg-green-50 rounded px-4 py-2  hover:bg-appLightBlue transition-colors duration-200">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.sulabhstha.mood_tracker"
+                className="flex flex-row items-center gap-2"
+                target="_blank"
+              >
+                View <AiOutlineLink size={20} />
+              </a>
             </button>
           </div>
         </div>
