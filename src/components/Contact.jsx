@@ -109,7 +109,7 @@ function Contact() {
           <input
             type="submit"
             value="Send"
-            className="bg-slate-950 hover:bg-slate-500 px-6 py-2 rounded-lg text-white font-bold  transition duration-300 ease-in-out cursor-pointer flex-none w-min self-center"
+            className="bg-slate-950 hover:bg-slate-500 px-6 py-2 mt-4 rounded-lg text-white font-bold  transition duration-300 ease-in-out cursor-pointer flex-none w-min self-center"
           />
         </form>
       </div>
