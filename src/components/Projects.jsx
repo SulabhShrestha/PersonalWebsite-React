@@ -12,7 +12,7 @@ function Projects() {
       <div className="rounded-xl md:max-h-72 md:w-full bg-appYellow flex flex-col self-center md:flex-row z-0 mx-4">
         <figure className="md:flex-1 inline-block">
           <img
-            src="/src/assets/mood-tracker.png"
+            src="/public/assets/mood-tracker.png"
             alt="Shoes"
             className="md:flex object-cover p-4 h-full w-full rounded-3xl "
           />
