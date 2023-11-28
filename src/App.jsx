@@ -6,6 +6,7 @@ import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import Services from "./components/Services";
 import { FaArrowUp } from "react-icons/fa";
+import { HashLink } from "react-router-hash-link";
 
 function App() {
   console.log("Height: ", window.innerHeight);
@@ -37,12 +38,15 @@ function App() {
       </main>
       <Footer />
 
-      <div
-        ref={scrollUpArrow}
-        className="go-up hidden bg-blue-400 w-12 h-12 rounded-full fixed right-8 bottom-8 duration-300 transition-all cursor-pointer hover:bg-blue-500"
-      >
-        <FaArrowUp className="m-auto h-full" />
-      </div>
+      {/* Scroll up arrow */}
+      <HashLink smooth to={`/#Top`}>
+        <div
+          ref={scrollUpArrow}
+          className="go-up hidden bg-blue-400 w-12 h-12 rounded-full fixed right-8 bottom-8 duration-300 transition-all cursor-pointer hover:bg-blue-500"
+        >
+          <FaArrowUp className="m-auto h-full" />
+        </div>
+      </HashLink>
     </section>
   );
 }

@@ -16,9 +16,9 @@ function Header() {
   return (
     <header
       className="flex justify-between items-center py-4 px-4 md:px-12"
-      id="Home"
+      id="Top"
     >
-      <h1 className="flex-1 font-bold text-2xl cursor-pointer">
+      <h1 className="flex-1 font-bold text-2xl text-blue-600 cursor-pointer">
         {" "}
         <HashLink smooth to={`/`}>
           TheSulabh
@@ -48,7 +48,7 @@ function Header() {
                 <HashLink
                   smooth
                   to={`/#${link}`}
-                  className="text-lg font-medium cursor-pointer"
+                  className="text-lg font-medium cursor-pointer text-blue-600"
                 >
                   {link}
                 </HashLink>
@@ -74,7 +74,7 @@ function Header() {
               <HashLink
                 smooth
                 to={`/#${link}`}
-                className="pb-4 font-medium mb-2"
+                className="pb-4 font-medium mb-2 text-blue-700"
                 onClick={() => setOpenDrawer(false)}
               >
                 {link}

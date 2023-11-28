@@ -1,7 +1,7 @@
 function Services() {
   return (
     <section className=" md:mx-auto mt-20 max-w-4xl" id="Services">
-      <h2 className="text-4xl mb-4 border-b-2 border-b-black font-medium w-max mx-auto md:mx-0 md:text-left">
+      <h2 className="text-4xl mb-4 border-b-2 border-b-blue-600 text-blue-600 font-medium w-max mx-auto md:mx-0 md:text-left">
         What can I do?
       </h2>
 
