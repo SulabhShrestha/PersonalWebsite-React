@@ -15,7 +15,7 @@ function Header() {
 
   return (
     <header
-      className="flex justify-between items-center py-4 px-4 md:px-12"
+      className="flex justify-between items-center py-4 px-4 md:px-12 sticky top-0"
       id="Top"
     >
       <h1 className="flex-1 font-bold text-2xl text-blue-600 cursor-pointer">
@@ -46,6 +46,7 @@ function Header() {
             <div className="menu menu-horizontal flex gap-6">
               {navLinks.map((link) => (
                 <HashLink
+                  key={link}
                   smooth
                   to={`/#${link}`}
                   className="text-lg font-medium cursor-pointer text-blue-600"
@@ -72,6 +73,7 @@ function Header() {
             {/* drawer links */}
             {navLinks.map((link) => (
               <HashLink
+                key={link}
                 smooth
                 to={`/#${link}`}
                 className="pb-4 font-medium mb-2 text-blue-700"

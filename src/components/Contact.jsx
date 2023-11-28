@@ -27,8 +27,8 @@ function Contact() {
     } else {
       emailjs
         .sendForm(
-          "service_uos4bvn",
-          "template_kmdvvig",
+          "service_juckxbo",
+          "template_1npdl5p",
           formRef.current,
           import.meta.env.VITE_EMAIL_JS_KEY
         )
