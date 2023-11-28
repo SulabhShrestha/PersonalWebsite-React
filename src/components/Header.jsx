@@ -18,7 +18,12 @@ function Header() {
       className="flex justify-between items-center py-4 px-4 md:px-12"
       id="Home"
     >
-      <h1 className="flex-1 font-bold text-2xl cursor-pointer">TheSulabh</h1>
+      <h1 className="flex-1 font-bold text-2xl cursor-pointer">
+        {" "}
+        <HashLink smooth to={`/`}>
+          TheSulabh
+        </HashLink>
+      </h1>
       <div className="drawer drawer-end inline-block flex-1">
         <input
           id="my-drawer-3"
