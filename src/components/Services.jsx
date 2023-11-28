@@ -1,6 +1,6 @@
 function Services() {
   return (
-    <section className="max-w-4xl md:mx-auto mt-20 mx-4">
+    <section className="max-w-4xl md:mx-auto mt-20 mx-40" id="Services">
       <h2 className="text-4xl mb-4 border-b-2 border-b-black font-medium w-max mx-auto md:mx-0 md:text-left">
         What can I do?
       </h2>

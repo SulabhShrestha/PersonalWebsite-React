@@ -30,10 +30,11 @@ function Contact() {
           "service_uos4bvn",
           "template_kmdvvig",
           formRef.current,
-          "YFxIfVifT9jgXJVFd"
+          import.meta.env.VITE_EMAIL_JS_KEY
         )
         .then(
           (result) => {
+            formRef.current.reset();
             Swal.fire({
               position: "top-end",
               icon: "success",
@@ -63,6 +64,7 @@ function Contact() {
     <section
       className="flex gap-4 md:flex-row flex-col mx-4 md:mx-auto mt-20 mb-8 md:mb-20 max-w-4xl bg-appPurple px-6 py-4 rounded-xl
     "
+      id="Contact"
     >
       <div className="declaration flex-1 text-center">
         <h2 className="text-4xl mb-4 border-b-2 w-max md:mx-0 md:text-left border-b-black font-medium">

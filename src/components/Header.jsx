@@ -5,7 +5,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 
 function Header() {
-  const navLinks = ["Home", "Projects", "Service", "Contact"];
+  const navLinks = ["Projects", "Services", "Contact"];
 
   const [openDrawer, setOpenDrawer] = useState(false);
 
@@ -15,7 +15,7 @@ function Header() {
 
   return (
     <header className="flex justify-between items-center py-4 px-8" id="Home">
-      <h1 className="flex-1 font-bold text-blue-500 text-xl">TheSulabh</h1>
+      <h1 className="flex-1 font-bold text-2xl cursor-pointer">TheSulabh</h1>
       <div className="drawer drawer-end inline-block flex-1">
         <input
           id="my-drawer-3"
@@ -37,7 +37,13 @@ function Header() {
           <div className="hidden lg:block">
             <div className="menu menu-horizontal flex gap-6">
               {navLinks.map((link) => (
-                <span className="text-lg font-medium">{link}</span>
+                <HashLink
+                  smooth
+                  to={`/#${link}`}
+                  className="text-lg font-medium cursor-pointer"
+                >
+                  {link}
+                </HashLink>
               ))}
             </div>
           </div>

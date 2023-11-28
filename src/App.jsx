@@ -7,16 +7,18 @@ import Services from "./components/Services";
 
 function App() {
   return (
-    <div className="bg-white ">
-      <Header />
-      <main>
+    <section className="bg-white ">
+      <section className="h-screen flex flex-col">
+        <Header />
         <Hero />
+      </section>
+      <main>
         <Projects />
         <Services />
         <Contact />
       </main>
       <Footer />
-    </div>
+    </section>
   );
 }
 

@@ -3,7 +3,7 @@ import { AiOutlineLink } from "react-icons/ai";
 
 function Projects() {
   return (
-    <section className="flex flex-col max-w-4xl mx-auto ">
+    <section className="flex flex-col max-w-4xl mx-auto" id="Projects">
       <h2 className="text-4xl mx-auto md:mx-0 md:text-left border-b-2 border-b-black w-min mb-4 mt-12 font-medium">
         Projects
       </h2>
