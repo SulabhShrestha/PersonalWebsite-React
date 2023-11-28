@@ -14,7 +14,10 @@ function Header() {
   }, [openDrawer]);
 
   return (
-    <header className="flex justify-between items-center py-4 px-4" id="Home">
+    <header
+      className="flex justify-between items-center py-4 px-4 md:px-12"
+      id="Home"
+    >
       <h1 className="flex-1 font-bold text-2xl cursor-pointer">TheSulabh</h1>
       <div className="drawer drawer-end inline-block flex-1">
         <input
@@ -63,12 +66,14 @@ function Header() {
 
             {/* drawer links */}
             {navLinks.map((link) => (
-              <p
+              <HashLink
+                smooth
+                to={`/#${link}`}
                 className="pb-4 font-medium mb-2"
                 onClick={() => setOpenDrawer(false)}
               >
                 {link}
-              </p>
+              </HashLink>
             ))}
           </div>
         </div>
