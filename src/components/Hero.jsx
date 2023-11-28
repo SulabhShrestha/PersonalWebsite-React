@@ -35,7 +35,7 @@ function Hero() {
 
           <div className="my-img relative md:order-2 order-1">
             <img
-              src="/public/assets/dog.jpg"
+              src="/assets/dog.jpg"
               alt="My image"
               width="300"
               className="animate-morph border-2 border-blue-500 mx-auto"
@@ -49,37 +49,37 @@ function Hero() {
               </p>
               <div className="stacks flex gap-4 md:flex-nowrap flex-wrap justify-center md:justify-normal">
                 <img
-                  src="/public/assets/html.png"
+                  src="/assets/html.png"
                   alt="Html"
                   className="w-12 h-12 hover:-translate-y-2 transition-all duration-300"
                 />
                 <img
-                  src="/public/assets/css.png"
+                  src="/assets/css.png"
                   alt="CSS"
                   className="w-12 h-12 hover:-translate-y-2 transition-all duration-300"
                 />
                 <img
-                  src="/public/assets/tailwindcss.png"
+                  src="/assets/tailwindcss.png"
                   alt="Tailwindcss"
                   className="w-12 h-12 hover:-translate-y-2 transition-all duration-300"
                 />
                 <img
-                  src="/public/assets/js.png"
+                  src="/assets/js.png"
                   alt="Javascript"
                   className="w-12 h-12 hover:-translate-y-2 transition-all duration-300"
                 />
                 <img
-                  src="/public/assets/react.png"
+                  src="/assets/react.png"
                   alt="React"
                   className="w-12 h-12 hover:-translate-y-2 transition-all duration-300"
                 />
                 <img
-                  src="/public/assets/node.png"
+                  src="/assets/node.png"
                   alt="NodeJS"
                   className="w-12 h-12 hover:-translate-y-2 transition-all duration-300"
                 />
                 <img
-                  src="/public/assets/flutter.png"
+                  src="assets/flutter.png"
                   alt="Flutter"
                   className="w-12 h-12 hover:-translate-y-2 transition-all duration-300"
                 />

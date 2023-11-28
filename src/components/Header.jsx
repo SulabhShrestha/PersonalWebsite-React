@@ -1,5 +1,5 @@
-import menuOpen from "/public/assets/icon-menu.svg";
-import menuClose from "/public/assets/icon-menu-close.svg";
+import menuOpen from "/assets/icon-menu.svg";
+import menuClose from "/assets/icon-menu-close.svg";
 import { HashLink } from "react-router-hash-link";
 import { useState } from "react";
 import { useEffect } from "react";
